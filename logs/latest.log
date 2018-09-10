@@ -1,0 +1,40 @@
+[15:58:23] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[15:58:23] [Server thread/INFO]: Loading properties
+[15:58:23] [Server thread/INFO]: Default game type: SURVIVAL
+[15:58:23] [Server thread/INFO]: Generating keypair
+[15:58:23] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:58:23] [Server thread/INFO]: Using default channel type
+[15:58:23] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-2b93d83 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[15:58:23] [Server thread/INFO]: Preparing level "world"
+[15:58:25] [Server thread/INFO]: Preparing start region for level 0 (Seed: -4363799272953396541)
+[15:58:26] [Server thread/INFO]: Preparing spawn area: 5%
+[15:58:27] [Server thread/INFO]: Preparing spawn area: 9%
+[15:58:28] [Server thread/INFO]: Preparing spawn area: 14%
+[15:58:29] [Server thread/INFO]: Preparing spawn area: 21%
+[15:58:30] [Server thread/INFO]: Preparing spawn area: 28%
+[15:58:31] [Server thread/INFO]: Preparing spawn area: 37%
+[15:58:32] [Server thread/INFO]: Preparing spawn area: 45%
+[15:58:33] [Server thread/INFO]: Preparing spawn area: 55%
+[15:58:34] [Server thread/INFO]: Preparing spawn area: 65%
+[15:58:35] [Server thread/INFO]: Preparing spawn area: 76%
+[15:58:36] [Server thread/INFO]: Preparing spawn area: 86%
+[15:58:37] [Server thread/INFO]: Preparing spawn area: 96%
+[15:58:37] [Server thread/INFO]: Preparing start region for level 1 (Seed: -4363799272953396541)
+[15:58:38] [Server thread/INFO]: Preparing spawn area: 6%
+[15:58:39] [Server thread/INFO]: Preparing spawn area: 20%
+[15:58:40] [Server thread/INFO]: Preparing spawn area: 42%
+[15:58:42] [Server thread/INFO]: Preparing spawn area: 53%
+[15:58:43] [Server thread/INFO]: Preparing spawn area: 73%
+[15:58:44] [Server thread/INFO]: Preparing spawn area: 87%
+[15:58:44] [Server thread/INFO]: Preparing start region for level 2 (Seed: -4363799272953396541)
+[15:58:45] [Server thread/INFO]: Preparing spawn area: 48%
+[15:58:46] [Server thread/INFO]: Preparing spawn area: 95%
+[15:58:47] [Server thread/INFO]: Done (23.115s)! For help, type "help" or "?"
+[15:58:49] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2058ms behind, skipping 41 tick(s)
+[15:58:56] [Server thread/INFO]: Stopping the server
+[15:58:56] [Server thread/INFO]: Stopping server
+[15:58:56] [Server thread/INFO]: Saving players
+[15:58:56] [Server thread/INFO]: Saving worlds
+[15:58:56] [Server thread/INFO]: Saving chunks for level 'world'/overworld
+[15:58:58] [Server thread/INFO]: Saving chunks for level 'world_nether'/the_nether
+[15:58:58] [Server thread/INFO]: Saving chunks for level 'world_the_end'/the_end
