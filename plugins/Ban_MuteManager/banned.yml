@@ -1,0 +1,8 @@
+BannedPlayers:
+  uuid:
+    nick: name
+    reason: reason
+    author: author
+    dateWhen: 01-01-2017 00:00
+    dateTo: 01-01-2017 00:01
+    ticks: 0

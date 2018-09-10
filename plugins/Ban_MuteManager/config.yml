@@ -1,0 +1,55 @@
+#Config version. Do not change it
+config-version: 4
+#Plugin refixes
+prefix: "&8« &c&lBan&8-&a&lMute &8» &f"
+prefixMute: "&8« &a&lMute &8» &f"
+prefixBan: "&8« &c&lBan &8» &f"
+prefixKick: "&8« &9&lKick &8» &f"
+# S - seconds
+# M - minutes
+# H - Hours
+default-mute-time: 30M
+# Default reasons
+default-mute-reason: "oOpS"
+default-ban-reason: "You have been banned"
+default-kick-reason: "Kicked by an operator"
+# Remove messages if it equals to words from words.yml
+clean-chat: true
+#AntiSpam 
+anti-spam-enable: true
+anti-spam-time: 5
+# AntiReconnect, time in seconds
+anti-reconnect-enable: true
+anti-reconnect-time: 10
+# CUSTOM MESSAGES
+# \n = new line
+A_HOUR: H
+A_MIN: M
+A_SEC: S
+MSG_ANTIRECONNECT: "\n\n&8« &cAntiReconnect &8»\n\n &cWait &6%t &cseconds\n\n"
+MUTE:
+  MSG_NO_PERM: "&cYou dont have a permission!"
+  MSG_PL_NOT_FOUND: "&7Player &a%player &7not found!"
+  MSG_IS_PLAYER_MUTED: "&7Player &a%player &7is &a%result!"
+  MSG_RESULT_1: "muted"
+  MSG_RESULT_2: "not muted"
+  MSG_MUTE_NOTIFY: "&a%author &7muted player &a%player &7to &a%date &7for &a%reason"
+  MSG_UNMUTE_NOTIFY: "&a%author &7unmute player &a%player"
+  MSG_CANT_USE_WORD: "&7You can not use this word: &a%word" 
+  MSG_MUTED: "&7You now muted for &a%reason &7to &a%date"
+  MSG_CANT_MUTE: "&7You can not mute &a%player"
+  MSG_ANTI_SPAM: "&7You can write a message after &a%t &7seconds."
+BAN:
+  MSG_NO_PERM: "&cYou dont have a permission!"
+  MSG_PL_NOT_FOUND: "&7Player &c%player &7not found!"
+  MSG_IS_PLAYER_BANNED: "&7Player &c%player &7is &c%result!"
+  MSG_RESULT_1: "banned"
+  MSG_RESULT_2: "not banned"
+  MSG_BAN_NOTIFY: "&c%author &7banned player &c%player &7to &c%date &7for &c%reason"
+  MSG_UNBAN_NOTIFY: "&c%author &7unban player &c%player"
+  MSG_BAN_FORMAT: "&cYou have been banned on this server\n&7Reason: &c%reason\n&7Author: &c%author\n&7Date: &c%date"
+  MSG_CANT_BAN: "&7You can not ban &c%player"
+KICK:
+  MSG_NO_PERM: "&cYou dont have a permission!"
+  MSG_PL_NOT_FOUND: "&7Player &c%player &7not found. Maybe it is not online."
+  MSG_CANT_KICK: "&7You can not kick &a%player"

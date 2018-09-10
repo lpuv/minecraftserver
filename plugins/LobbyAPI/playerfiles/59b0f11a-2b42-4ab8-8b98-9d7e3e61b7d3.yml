@@ -1,0 +1,26 @@
+Sardine123:
+  plots:
+    xp: 0.3686238
+    xpl: 0
+    health: 16.0
+    hunger: 17
+    enderchest:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        type: WOOD
+        amount: 64
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        type: ENDER_CHEST
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        type: COMMAND
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        type: YELLOW_SHULKER_BOX
+    i:
+      offhand:
+        ==: org.bukkit.inventory.ItemStack
+        type: AIR
+        damage: -1
+        amount: 0

@@ -1,0 +1,26 @@
+disallowHubCommandNoPerm: true
+Settings:
+  Enable_Per_World_Inventories: true
+auto-update: true
+hasBungee: false
+Version: 3.7.60
+Worlds:
+  plots:
+    name: plots
+    displayname: plots
+    spawnLoc:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 0.0
+      pitch: 0.0
+      w: plots
+    weatherstate: NORMAL
+    i: 1
+    save: plots
+    desc: ''
+    gamemode: SURVIVAL
+    color: 13
+    hidden: false
+    joincommands:
+    - joinGamer4Life

@@ -1,0 +1,28 @@
+Last-MaintanceMode:
+  SaveTime: true
+  LoadTime: true
+KickMessage: '&cWe are in maintenance . Try Again Later :)'
+TimeFormat: d {Dp} &cH {hp} &emm {Np}
+Use-Maintenance-Icon: true
+Hover:
+  Enabled: true
+  Message: '&4&lThis server is in maintenace!'
+Version:
+  Use: true
+  Message: '&e&lMAINTENACE'
+Prefix:
+  Day:
+    Use: true
+    Name: '&4Days'
+  Hour:
+    Use: true
+    Name: '&cHours and'
+  Minute:
+    Use: true
+    Name: '&eMinutes'
+ChangeMotd:
+  Enabled: true
+  PermanentTitle: '&4&lIndefinite'
+  Title: '&cServer in Maintenance {n} &aAvailable in &4{#}'
+last-maintance-mode-time: 4799
+Permanent: false

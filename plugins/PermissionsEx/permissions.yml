@@ -1,0 +1,118 @@
+groups:
+  Guest:
+    options:
+      default: true
+      prefix: '&f[&5MEMBER&f] '
+    permissions:
+    - essentials.afk
+    - essentials.spawn
+    - essentials.home
+    - essentials.sethome
+    - essentials.rules
+    - essentials.motd
+    - essentials.msg.*
+    - essentials.help
+    - essentials.suicide
+    - essentials.signs.use.free
+    - essentials.signs.use.buy
+    - essentials.signs.use.warp
+    - essentials.signs.use.disposal
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.warps.*
+    - essentials.mail.*
+    - essentials.tp
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpadeny
+    - plots.visit.*
+  Donator:
+    options:
+      default: false
+      prefix: '&f[&aVIP&f] '
+    permissions:
+    - essentials.back
+    - essentials.sell
+    - essentials.worth
+    - essentials.me
+    - essentials.vanish
+    - essentials.setspawn
+    - essentials.fly
+    - essentials.hat
+    - essentials.signs.use.trade
+    - essentials.signs.use.sell
+    - essentials.signs.create.trade
+    - essentials.signs.create.sell
+    - essentials.signs.break.trade
+    - essentials.signs.break.trade
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.magic
+    - essentials.nick.format
+    - essentials.gamemode
+    inheritance:
+    - guest
+  Moderator:
+    options:
+      default: false
+      prefix: '&f[&e&lOWNER&f] '
+    permissions:
+    - essentials.ban.*
+    - essentials.broadcast
+    - essentials.give
+    - essentials.item
+    - essentials.eco
+    - essentials.clearinventory.others
+    - essentials.clearinventory
+    - essentials.vanish.see
+    - essentials.essentials
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.kill
+    - essentials.mute
+    - essentials.mute.notify
+    - essentials.tempban
+    - essentials.weather
+    - essentials.unban
+    - essentials.unban.notify
+    inheritance:
+    - donator
+  Owner:
+    permissions:
+    - '*'
+    - essentials.*
+    - essentials.god.*
+    - essentials.signs.break.buy
+    - essentials.signs.break.free
+    - essentials.signs.create.free
+    - essentials.signs.create.warp
+    - essentials.signs.break.warp
+    - essentials.signs.break.disposal
+    - essentials.signs.create.disposal
+    - vault.admin
+    - lagg.*
+    - admin.freezeplayer.freeze
+    - admin.freezeplayer.unfreeze
+    - admin.freezeplayer.freezeall
+    - admin.freezeplayer.unfreezeall
+    - admin.freezeplayer.donotfreeze
+    - admin.protector.protect
+    - admin.protector.unprotect
+    - plots.admin
+    - commands.ban
+    - commands.op
+    - sv.keepfly
+    - sv.see
+    - sv.notoggle
+    inheritance:
+    - moderator
+    options:
+      prefix: '&f[&e&lOWNER&f] '
+      default: false
+users:
+  59b0f11a-2b42-4ab8-8b98-9d7e3e61b7d3:
+    group:
+    - Owner
+    options:
+      name: Sardine123
+schema-version: 1

@@ -1,0 +1,152 @@
+# =============== PixelVip Configuration Options ================
+# 
+# This is the default configuration and some information about some configurations.
+# 
+# In "groups" on "commands" and "cmdChances"(Lists) you can use this placeholders:
+# - {p} = Players Name
+# - {vip} = Vip Group
+# - {playergroup} = Player Group before Vip activation
+# - {days} = Days of activated Vip
+# 
+# In "groups" > "cmdChances"(List) you can add commands to run based on a % chance. 
+# Use numbers below 0-100 like the example on "vip1".
+# 
+# In "configs" > "cmdOnRemoveVip"(String) you can use this placeholders:
+# - {p} = Player Name
+# - {vip} = Name of Vip Removed
+# 
+# In "configs" > "commandsToRunOnChangeVip"(List) you can use this placeholders:
+# - {p} = Player Name
+# - {newvip} = Name of Vip the player is changing to
+# - {oldvip} = Name of Vip the player is changing from
+# 
+# In "configs" > "commandsToRunOnVipFinish"(List) you can use this placeholders:
+# - {p} = Player Name
+# - {vip} = Name of Vip
+# - {playergroup} = Player Group before Vip activation
+
+
+groups:
+  vip1:
+    essentials-kit: vip1
+    commands:
+    - broadcast &aThe player &6{p} &ahas acquired your &6{vip} &afor &6{days} &adays
+    - give {p} minecraft:diamond 10
+    - eco give {p} 10000
+    cmdChances:
+      '50':
+      - give {p} minecraft:diamond_block 5
+      '30':
+      - give {p} minecraft:mob_spawner 1
+configs:
+  database:
+    type: file
+    mysql:
+      host: jdbc:mysql://localhost:3306/
+      db-name: pixelvip
+      username: user
+      password: pass
+      keys:
+        table-name: pixelvip_keys
+        columns:
+          key: col_key
+          group: col_group
+          duration: col_duration
+          uses: col_uses
+          cmds: col_cmds
+          info: col_info
+          comments: col_comments
+      vips:
+        table-name: pixelvip_vips
+        columns:
+          uuid: col_uuid
+          vip: col_vip
+          playerGroup: col_playerGroup
+          duration: col_duration
+          nick: col_nick
+          expires-on-exact: col_expires
+          active: col_active
+          kits: col_kits
+          comments: col_comments
+      transactions:
+        table-name: pixelvip_transactions
+        columns:
+          idt: col_idt
+          nick: col_nick
+  key-size: 10
+  useVault-toChangePlayerGroup: true
+  cmdToReloadPermPlugin: pex reload
+  cmdOnRemoveVip: ''
+  commandsToRunOnVipFinish:
+  - nick {p} off
+  commandsToRunOnChangeVip: []
+  queueCmdsForOfflinePlayers: false
+  worldCmdsAllowed:
+  - world
+  - world_nether
+  - world_the_end
+bungee:
+  enableSync: false
+  serverID: server1
+apis:
+  pagseguro:
+    use: false
+    email: your@email.com
+    token: yourtoken
+    ignoreOldest: 31/05/2018
+  paypal:
+    use: false
+  commandIds:
+    '1': darvip {p} Vip1 15
+    '2': silk give {p} iron_golem 2
+    '3': eco give {p} 10000
+strings:
+  _pluginTag: '&7[&6PixelVip&7] '
+  noPlayersByName: '&cTheres no players with this name!'
+  onlyPlayers: '&cOnly players ca use this command!'
+  noKeys: '&aTheres no available keys! Use &6/newkey &aor &6/newikey &ato generate
+    one.'
+  listKeys: '&aList of Keys:'
+  listItemKeys: '&aList of Item Keys:'
+  vipInfoFor: '&aVip info for '
+  playerNotVip: '&cThis player(or you) is not VIP!'
+  moreThanZero: '&cThis number need to be more than 0'
+  keyGenerated: '&aGenerated a key with the following:'
+  invalidKey: '&cThis key is invalid or not exists!'
+  vipActivated: '&aVip activated with success:'
+  usesLeftActivation: '&bThis key can be used for more: &6{uses} &btimes.'
+  activeVip: '&b- Vip: &6{vip}'
+  activeDays: '&b- Days: &6{days} &bdays'
+  timeLeft: '&b- Time left: &6'
+  totalTime: '&b- Days: &6'
+  timeKey: '&b- Key: &6'
+  timeGroup: '&b- Vip: &6'
+  timeActive: '&b- In Use: &6'
+  infoUses: '&b- Uses left: &6'
+  activeVipSetTo: '&aYour active VIP is '
+  noGroups: '&cNo groups with name &6'
+  days: ' &bdays'
+  hours: ' &bhours'
+  minutes: ' &bminutes'
+  and: ' &band'
+  vipEnded: ' &bYour vip &6{vip} &bhas ended. &eWe hope you enjoyed your Vip time
+    &a:D'
+  lessThan: '&6Less than one minute to end your vip...'
+  vipsRemoved: '&aVip(s) of player removed with success!'
+  vipSet: '&aVip set with success for this player!'
+  sync-groups: '&aGroup configs send to all servers!'
+  list-of-vips: '&aList of active VIPs: '
+  vipAdded: '&aVip added with success for this player!'
+  item: '&a-- Item: &b'
+  itemsGiven: '&aGiven {items} item(s) using a key.'
+  itemsAdded: '&aItem(s) added to key:'
+  keyRemoved: '&aKey removed with success: &b'
+  noKeyRemoved: '&cTheres no keys to remove!'
+  cmdNotAllowedWorld: '&cThis command is not allowed in this world!'
+  'true': '&atrue'
+  'false': '&cfalse'
+  pagseguro:
+    waiting: '&cPagSeguro: Your purchase has not yet been approved!'
+    codeused: '&cPagSeguro: This code has already been used!'
+    expired: '&cPagSeguro: This code has expired!'
+    noitems: '&cPagSeguro: No items delivered. Contact an administrator to help you!'

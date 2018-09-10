@@ -1,0 +1,37 @@
+No-Permission: '&cYou do not have permission.'
+Version-Not-Supported: '&cThis servers version is not supported.'
+Player-Not-Found: '&cPlayer is not found'
+Light-Level-Item-Name: '&eLight Level Detector'
+Light-Level-Item-Lore:
+- Right click the top of
+- a block to get the light
+- level and see if mobs will spawn.
+Texture-Finder-Item-Name: '&eSkull Texture Getter'
+Texture-Finder-Item-Lore:
+- Get the link of where
+- the texture fpr the skulls
+- skin is located, for you to download
+Commands-To-Log:
+  Enabled: true
+  list:
+  - say
+  - ban
+
+# Do you want the plugin to check for updates when
+# a user logs onto the server (If they have permission)
+Check-For-Updates-On-Join: true
+
+# Do you want  the plugin to only be an API
+# for the linked plugins? No new commands or Recipes and such
+API-Only: false
+
+# Do you want the Custom Recipes to be disabled?
+NO-RECIPES: false
+
+# Do you want a log file to be generated for the action, titlemaker
+  or tab commands'
+Log-Plugin-Commands: true
+Scoreboard-Team-Unknown: '&cThe scoreboard team %team% was not found.'
+Particle-Not-Found: '&cParticle not found.'
+Invalid-Number: '&cInvalid number format error'
+Missing-Offset-Values: '&cMust have 3 offset values.'

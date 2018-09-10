@@ -1,0 +1,25 @@
+home:
+  W: bc39db86-596e-4585-abf9-2067a4f68bdd
+  X: -170.5
+  Y: 65.25
+  Z: 108.5
+  Yaw: 357
+  Pitch: 40
+WarpList:
+- home
+- homesneezy
+- prohut
+homesneezy:
+  W: bc39db86-596e-4585-abf9-2067a4f68bdd
+  X: -172.5
+  Y: 65.25
+  Z: 62.5
+  Yaw: 4
+  Pitch: 46
+prohut:
+  W: bc39db86-596e-4585-abf9-2067a4f68bdd
+  X: -171.5
+  Y: 65.25
+  Z: 78.5
+  Yaw: -210
+  Pitch: 49
